@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 1. Descendant Selector (space) (con cháu) */
+        div p {
+            background-color: yellow;
+        }
+
+        /* 2. Child Selector (>) (con) */
+        /* div>p {
+            background-color: yellow;
+        } */
+
+        /* 3. Adjacent Sibling Selector (+) (anh chị em liền kề) */
+        /* div+p {
+            background-color: yellow;
+        } */
+
+        /* 4. General Sibling Selector (~) (anh chị em chung)*/
+        /* div~p {
+            background-color: yellow;
+        } */
+    </style>
+</head>
+
+<body>
+    <h2>Descendant Selector</h2>
+    <p>The descendant selector matches all elements that are descendants of a specified element.</p>
+
+    <div>
+        <p>Paragraph 1. </p>
+        <p>Paragraph 2. </p>
+        <section>
+            <p>Paragraph 3.</p>
+        </section>
+    </div>
+
+    <p>Paragraph 4. </p>
+    <p>Paragraph 5. </p>
+</body>
+
+</html>
