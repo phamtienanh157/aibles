@@ -10,6 +10,13 @@
             display: flex;
             background-color: rgb(53, 154, 255);
             padding: 10px;
+            flex-wrap: wrap;
+            /* align-content: space-between; */
+            /* align-items: stretch; */
+            /* justify-content: space-around; */
+            /* justify-content: space-evenly; */
+
+            /* flex-direction: column-reverse; */
             height: 500px;
         }
 
@@ -23,13 +30,14 @@
             width: 30px;
         }
         .item1{
-            height: 100px;
         }
         .item2{
-            height: 60px;
+            flex-grow: 2;
         }
         .item3{
-            height: 30px;
+            flex-grow: 3;
+        }
+        .item4{
         }
 </style>
 </head>
