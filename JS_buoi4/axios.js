@@ -90,18 +90,24 @@ function handleAddUser() {
     const name = user[0].value
     const email = user[1].value
     const city = user[2].value
-
-    axios.post('/users', {
-        name: name,
-        avatar: "https://cdn.fakercloud.com/avatars/d_kobelyatsky_128.jpg",
-        email: email,
-        city: city,
-        image: "http://placeimg.com/640/480"
-    })
-        .then(function (response) {
-            getData()
+    console.log(name)
+    if (name.length === 0 || email.length === 0 || city.length === 0) {
+        alert("You must complete the input !!!")
+    }
+    else {
+        axios.post('/users', {
+            name: name,
+            avatar: "https://cdn.fakercloud.com/avatars/d_kobelyatsky_128.jpg",
+            email: email,
+            city: city,
+            image: "http://placeimg.com/640/480"
         })
-        .catch(function (error) {
-            console.log(error);
-        });
+            .then(function (response) {
+                getData()
+                alert(response.status)
+            })
+            .catch(function (error) {
+                alert(error);
+            });
+    }
 }
