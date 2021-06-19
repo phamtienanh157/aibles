@@ -33,3 +33,12 @@ fetch(url, {
     body: JSON.stringify(data) // body data type must match "Content-Type" header
 });
 return response.json(); // parses JSON response into native JavaScript objects
+
+/* axios.request(config)
+axios.get(url[, config])
+axios.delete(url[, config])
+axios.head(url[, config])
+axios.options(url[, config])
+axios.post(url[, data[, config]])
+axios.put(url[, data[, config]])
+axios.patch(url[, data[, config]]) */

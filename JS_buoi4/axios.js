@@ -11,6 +11,14 @@
 //         // always executed
 //     });
 
+// async function getUser() {
+//     try {
+//         const response = await axios.get('/user?ID=12345');
+//         console.log(response);
+//     } catch (error) {
+//         console.error(error);
+//     }
+// }
 
 axios.defaults.baseURL = 'https://60becf8e6035840017c17a48.mockapi.io/api';
 
@@ -21,15 +29,6 @@ axios.defaults.baseURL = 'https://60becf8e6035840017c17a48.mockapi.io/api';
 //     .catch(function (error) {
 //         console.log(error);
 //     });
-
-/* axios.request(config)
-axios.get(url[, config])
-axios.delete(url[, config])
-axios.head(url[, config])
-axios.options(url[, config])
-axios.post(url[, data[, config]])
-axios.put(url[, data[, config]])
-axios.patch(url[, data[, config]]) */
 
 
 /* function getUserAccount() {

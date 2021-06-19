@@ -23,22 +23,31 @@
 //         console.log("Looks like there was a problem: \n", error)
 //     })
 
-
-fetch("https://60becf8e6035840017c17a48.mockapi.io/api/users")
-    .then(function (response) {
-        if (!response.ok) {
-            throw Error(response.statusText)
-        }
-        // Read the response as json.
-        return response.json()
-    })
-    .then(function (responseAsJson) {
-        // Do stuff with the JSON
-        console.log(responseAsJson)
-    })
-    .catch(function (error) {
-        console.log("Looks like there was a problem: \n", error)
-    })
+async function getUser() {
+    try {
+        const response = await fetch('https://60becf8e6035840017c17a48.mockapi.io/api/users');
+        const result = await response.json();
+        console.log(result);
+    } catch (error) {
+        console.error(error);
+    }
+}
+getUser()
+// fetch("https://60becf8e6035840017c17a48.mockapi.io/api/users")
+//     .then(function (response) {
+//         if (!response.ok) {
+//             throw Error(response.statusText)
+//         }
+//         // Read the response as json.
+//         return response.json()
+//     })
+//     .then(function (responseAsJson) {
+//         // Do stuff with the JSON
+//         console.log(responseAsJson)
+//     })
+//     .catch(function (error) {
+//         console.log("Looks like there was a problem: \n", error)
+//     })
 
 // form
 // fetch(pathToResource)
