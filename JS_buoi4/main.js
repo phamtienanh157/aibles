@@ -1,3 +1,17 @@
+const users = new Promise((resolve, reject) => {
+    resolve("ok")
+    reject("no ok")
+})
+
+users
+    .then(res => {
+        console.log(res)
+    })
+    .catch(err => {
+        console.log(err)
+    })
+
+
 [
     {
         status_code: 200,
