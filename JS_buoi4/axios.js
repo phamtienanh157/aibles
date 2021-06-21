@@ -7,9 +7,6 @@
 //         // handle error
 //         console.log(error);
 //     })
-//     .then(function () {
-//         // always executed
-//     });
 
 // async function getUser() {
 //     try {
@@ -20,7 +17,6 @@
 //     }
 // }
 
-axios.defaults.baseURL = 'https://60becf8e6035840017c17a48.mockapi.io/api';
 
 // axios.get('/users')
 //     .then(function (response) {
@@ -31,19 +27,20 @@ axios.defaults.baseURL = 'https://60becf8e6035840017c17a48.mockapi.io/api';
 //     });
 
 
-/* function getUserAccount() {
-    return axios.get('/users/12345');
-}
+// function getUserAccount() {
+//     return axios.get('/users/12345');
+// }
 
-function getUserPermissions() {
-    return axios.get('/users/12345/permissions');
-}
+// function getUserPermissions() {
+//     return axios.get('/users/12345/permissions');
+// }
 
-axios.all([getUserAccount(), getUserPermissions()])
-    .then(axios.spread(function (acct, perms) {
-        // Tất cả request đều đã được thực hiện xong
-    })); */
+// axios.all([getUserAccount(), getUserPermissions()])
+//     .then(axios.spread(function (acct, perms) {
+//         // Tất cả request đều đã được thực hiện xong
+//     }));
 
+axios.defaults.baseURL = 'https://60becf8e6035840017c17a48.mockapi.io/api';
 
 function getData() {
     axios.get('/users')
@@ -89,7 +86,6 @@ function handleAddUser() {
     const name = user[0].value
     const email = user[1].value
     const city = user[2].value
-    console.log(name)
     if (name.length === 0 || email.length === 0 || city.length === 0) {
         alert("You must complete the input !!!")
     }
@@ -99,9 +95,12 @@ function handleAddUser() {
             avatar: "https://cdn.fakercloud.com/avatars/d_kobelyatsky_128.jpg",
             email: email,
             city: city,
-            image: "http://placeimg.com/640/480"
+            image: "http://placeimg.com/640/480",
+            gender: "Bigender",
+            birthday: "2020-10-21T16:20:23.289Z"
         })
             .then(function (response) {
+                debugger
                 getData()
                 alert(response.status)
             })

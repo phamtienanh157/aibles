@@ -4,9 +4,9 @@
 // 2. Duoc truyen qua doi so
 // 3. Duoc goi lai
 
-// const data = users.map(function(user){
-//     console.log(user)
-// })
+const data = users.map(function (user) {
+    console.log(user)
+})
 
 // const users = new Promise((resolve, reject) => {
 //     resolve("ok")
