@@ -96,11 +96,8 @@ function handleAddUser() {
             email: email,
             city: city,
             image: "http://placeimg.com/640/480",
-            gender: "Bigender",
-            birthday: "2020-10-21T16:20:23.289Z"
         })
             .then(function (response) {
-                debugger
                 getData()
                 alert(response.status)
             })
