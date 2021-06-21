@@ -32,13 +32,13 @@ axios.defaults.baseURL = 'https://60becf8e6035840017c17a48.mockapi.io/api';
 
 
 /* function getUserAccount() {
-    return axios.get('/user/12345');
+    return axios.get('/users/12345');
 }
- 
+
 function getUserPermissions() {
-    return axios.get('/user/12345/permissions');
+    return axios.get('/users/12345/permissions');
 }
- 
+
 axios.all([getUserAccount(), getUserPermissions()])
     .then(axios.spread(function (acct, perms) {
         // Tất cả request đều đã được thực hiện xong
