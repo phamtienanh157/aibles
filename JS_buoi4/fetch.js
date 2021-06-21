@@ -23,16 +23,16 @@
 //         console.log("Looks like there was a problem: \n", error)
 //     })
 
-async function getUser() {
-    try {
-        const response = await fetch('https://60becf8e6035840017c17a48.mockapi.io/api/users');
-        const result = await response.json();
-        console.log(result);
-    } catch (error) {
-        console.error(error);
-    }
-}
-getUser()
+// async function getUser() {
+//     try {
+//         const response = await fetch('https://60becf8e6035840017c17a48.mockapi.io/api/users');
+//         const result = await response.json();
+//         console.log(result);
+//     } catch (error) {
+//         console.error(error);
+//     }
+// }
+// getUser()
 // fetch("https://60becf8e6035840017c17a48.mockapi.io/api/users")
 //     .then(function (response) {
 //         if (!response.ok) {
