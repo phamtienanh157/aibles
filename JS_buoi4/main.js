@@ -1,4 +1,4 @@
-
+/* 
 // call back la gi ?
 // 1. La ham
 // 2. Duoc truyen qua doi so
@@ -95,4 +95,10 @@ params: {
 data: {
     firstName: 'Fred'
 }
-// ...
+// ... */
+
+if (true) {
+    const greeting = "say Hello instead";
+    console.log(greeting); // "say Hello instead"
+}
+console.log(greeting); // "say Hi"
